@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(20, 20, 20);
+        }
+
+        .caixa{
+            width: 500px;
+            height: 8px;
+        }
+
+        .barra{
+            background-color: rgb(41, 41, 41);
+            width: 500px;
+            height: 8px;
+            animation-name: progresso;
+            animation-timing-function: linear;
+            animation-duration: 200s;
+        }
+
+        @keyframes progresso{
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa"><div class="barra"></div></div>
+    
+</body>
+</html>
